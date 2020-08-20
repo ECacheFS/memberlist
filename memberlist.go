@@ -18,7 +18,7 @@ import (
 	"container/list"
 	"errors"
 	"fmt"
-	"log"
+	log "github.com/ECacheFS/logrus"
 	"net"
 	"os"
 	"strconv"
@@ -127,7 +127,7 @@ func newMemberlist(conf *Config) (*Memberlist, error) {
 
 	logger := conf.Logger
 	if logger == nil {
-		logger = log.New(logDest, "", log.LstdFlags)
+		logger = log.StandardLogger()
 	}
 
 	// Set up a network transport by default if a custom one wasn't given

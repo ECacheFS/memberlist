@@ -3,7 +3,7 @@ package memberlist
 import (
 	"fmt"
 	"io"
-	"log"
+	log "github.com/ECacheFS/logrus"
 	"net"
 	"os"
 	"strings"
