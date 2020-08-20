@@ -1,8 +1,9 @@
-module github.com/hashicorp/memberlist
+module github.com/ECacheFS/memberlist
 
-go 1.12
+go 1.14
 
 require (
+	github.com/ECacheFS/logrus v1.6.1
 	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/google/btree v0.0.0-20180813153112-4030bb1f1f0c
